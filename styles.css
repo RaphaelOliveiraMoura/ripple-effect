@@ -14,29 +14,29 @@ body {
   background-color: #666;
 }
 
-.container:nth-child(1) {
+.ripple:nth-child(1) {
   background-color: #f6f6f6;
   color: #333;
   --wave-color: black;
   --wave-scale: 10;
 }
 
-.container:nth-child(1):hover {
+.ripple:nth-child(1):hover {
   background-color: #eee;
 }
 
-.container:nth-child(2) {
+.ripple:nth-child(2) {
   background-color: #1976d2;
 }
 
-.container:nth-child(2):hover {
+.ripple:nth-child(2):hover {
   background-color: rgb(17, 82, 147);
 }
 
-.container:nth-child(3) {
+.ripple:nth-child(3) {
   background-color: tomato;
 }
 
-.container:nth-child(3):hover {
+.ripple:nth-child(3):hover {
   background-color: red;
 }
