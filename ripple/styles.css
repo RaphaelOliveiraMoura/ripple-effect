@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.container {
+  padding: 12px 24px;
+  background-color: #1976d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  --posX: calc(0px - 40px);
+  --posY: calc(0px - 40px);
+  user-select: none;
+  box-shadow: 0px 2px 2px #333b;
+  transition: box-shadow 0.2s;
+  color: white;
+  margin: 4px;
+}
+
+.container:hover {
+  background-color: rgb(17, 82, 147);
+}
+
+.container:active {
+  box-shadow: 0px 4px 6px 2px #3336;
+}
+
+.ripple::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: var(--posX, calc(0px - 40px));
+  top: var(--posY, calc(0px - 40px));
+  background-color: transparent;
+  border-radius: 8px;
+  transform: scale(0);
+  animation: rippleEffect 0.4s ease-out;
+  animation-fill-mode: forwards;
+  border-radius: 50%;
+}
+
+@keyframes rippleEffect {
+  0% {
+    background-color: var(--wave-color, #fff);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(var(--wave-scale, 3));
+    opacity: 1;
+  }
+}
