@@ -2,7 +2,7 @@
 
 # Ripple Effect
 
-<img src="./ripple_effect">
+<img src="./ripple-effect.gif">
 <p>Gif recorded with byzanz-record<p>
 
 <p>
